@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Admin Dashboard</h2>
+
+    <div class="card">
+        <h3>Total Users: {{ total_users }}</h3>
+    </div>
+    <div class="card">
+        <h3>Total Approved Providers: {{ total_providers }}</h3>
+        {{ pending_msg|safe }}
+    </div>
+
+    <div class="card">
+        <h3>Most Popular Services</h3>
+        {{ popular_services_table|safe }}
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Request Service from {{ provider_name }}</h2>
+    <form method="POST">
+        <label>Preferred Date</label>
+        <input type="date" name="booking_date" required>
+
+        <label>Preferred Time</label>
+        <input type="time" name="booking_time" required>
+
+        <label>Describe the issue / details</label>
+        <textarea name="description" placeholder="Explain what needs to be fixed..." required></textarea>
+
+        <button type="submit">Send Request</button>
+    </form>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* style.css - basic styling for ServiceFinder */
+
+body {
+    font-family: "Bahnschrift Condensed", sans-serif;
+    background-color: beige;
+    background-image: url('../static/images/background.jpg');
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: plum;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid plum;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid plum;
+    border-radius: 4px;
+    font-family: "Bahnschrift Condensed", sans-serif;
+    color: black;
+}
+
+textarea {
+    height: 90px;
+}
+
+button, .btn {
+    background-color: plum;
+    color: black;
+    border: none;
+    padding: 9px 18px;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Bahnschrift Condensed", sans-serif;
+}
+
+button:hover, .btn:hover {
+    background-color: mediumpurple;
+}
+
+.flash {
+    background-color: thistle;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid plum;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: thistle;
+}
+
+.card {
+    border: 1px solid plum;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.home-links a {
+    background-color: plum;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.home-links a:hover {
+    background-color: mediumpurple;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.result-box {
+    background-color: thistle;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}

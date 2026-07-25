@@ -1,0 +1,81 @@
+text,category,cost
+tap is leaking slightly need repair,Plumbing,300
+pipe burst in the bathroom wall,Plumbing,1800
+toilet is clogged and not flushing,Plumbing,500
+no water supply in the house,Plumbing,1500
+sink drain is blocked,Plumbing,400
+water heater pipe leaking,Plumbing,900
+drainage pipe outside broken,Plumbing,2000
+kitchen tap dripping water,Plumbing,250
+overhead tank overflowing,Plumbing,600
+low water pressure in taps,Plumbing,700
+power socket not working,Electrical,300
+ceiling fan making noise,Electrical,400
+lights flickering in house,Electrical,600
+short circuit near switch board,Electrical,2000
+fuse keeps tripping,Electrical,500
+wiring exposed and sparking,Electrical,2200
+no electricity in entire house,Electrical,2500
+tube light not turning on,Electrical,250
+inverter not charging,Electrical,900
+mcb trips with geyser,Electrical,700
+wooden door not closing properly,Carpentry,500
+cupboard hinge broken,Carpentry,400
+bed frame broken and wobbly,Carpentry,1200
+window frame has termites,Carpentry,1800
+dining table leg broken,Carpentry,700
+need new shelves in wardrobe,Carpentry,1000
+door lock loose,Carpentry,350
+kitchen cabinet doors misaligned,Carpentry,900
+need wooden partition built,Carpentry,3000
+wooden staircase railing loose,Carpentry,1500
+ac not cooling properly,AC Repair,1200
+ac making loud noise,AC Repair,800
+ac leaking water indoor unit,AC Repair,900
+ac remote not responding,AC Repair,500
+compressor not starting,AC Repair,3500
+ac gas needs refill,AC Repair,2500
+window ac blowing hot air,AC Repair,1500
+ac filter needs cleaning,AC Repair,600
+central ac unit stopped working,AC Repair,4000
+annual ac servicing needed,AC Repair,700
+living room walls need repainting,Painting,3500
+exterior wall paint peeling,Painting,6000
+paint entire house before diwali,Painting,8000
+ceiling water stains need painting,Painting,1500
+fresh coat of paint bedroom,Painting,2000
+waterproof paint for terrace,Painting,4500
+repaint gate and grills,Painting,1200
+putty work and painting cracked walls,Painting,2800
+texture painting hall wall,Painting,3000
+painting newly built room,Painting,2500
+washing machine not spinning,Appliance Repair,700
+refrigerator not cooling,Appliance Repair,1500
+microwave not heating food,Appliance Repair,600
+mixer grinder motor noise,Appliance Repair,400
+geyser not heating water,Appliance Repair,900
+water purifier leaking,Appliance Repair,500
+induction stove not turning on,Appliance Repair,650
+chimney not sucking smoke,Appliance Repair,800
+fridge compressor buzzing sound,Appliance Repair,3000
+dishwasher not cleaning dishes,Appliance Repair,1000
+need deep cleaning entire house,Cleaning,2500
+sofa needs shampoo cleaning,Cleaning,700
+bathroom tiles stains and mold,Cleaning,500
+clean the water tank,Cleaning,900
+kitchen chimney deep cleaning,Cleaning,600
+carpet needs professional cleaning,Cleaning,800
+windows and glass doors cleaning,Cleaning,400
+house cleaning after renovation,Cleaning,2000
+sofa and curtains dry cleaned,Cleaning,1000
+regular maid service daily cleaning,Cleaning,300
+cockroaches all over kitchen,Pest Control,700
+termites infested wooden furniture,Pest Control,3000
+bed bugs in bedroom,Pest Control,1200
+ants coming from cabinets,Pest Control,500
+rats infested store room,Pest Control,1500
+mosquitoes big problem house,Pest Control,600
+fumigation entire house,Pest Control,2500
+termite mud tubes wooden almirah,Pest Control,2800
+spiders and webs storeroom,Pest Control,500
+annual pest control contract,Pest Control,2000

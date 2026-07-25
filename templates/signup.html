@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Sign Up</h2>
+    <form method="POST">
+        <label>I am a</label>
+        <select name="role" required>
+            <option value="user">User</option>
+            <option value="provider">Service Provider</option>
+        </select>
+
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>Phone Number</label>
+        <input type="text" name="phone" required>
+
+        <label>Region / City</label>
+        <select name="region" required>
+            {{ region_options|safe }}
+        </select>
+
+        <label>Service Category (only needed if you are a Service Provider)</label>
+        <select name="service_category">
+            {{ services_options|safe }}
+        </select>
+
+        <label>Years of Experience (only needed if you are a Service Provider)</label>
+        <input type="number" name="experience" min="0" value="0">
+
+        <label>Short Bio (only needed if you are a Service Provider)</label>
+        <textarea name="bio" placeholder="Tell users about your skills, contact details etc."></textarea>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <p class="small-text">Already have an account? <a href="/login">Login here</a></p>
+    <p class="small-text">Note: Service Provider accounts need admin approval before you can login.</p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

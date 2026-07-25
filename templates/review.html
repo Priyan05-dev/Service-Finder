@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Rate & Review</h2>
+    <p>Service: {{ service_name }}</p>
+
+    <form method="POST">
+        <label>Rating (1 to 5)</label>
+        <select name="rating" required>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Below Average</option>
+            <option value="1">1 - Poor</option>
+        </select>
+
+        <label>Comment</label>
+        <textarea name="comment" placeholder="How was the service?"></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>{{ provider_name }}</h2>
+    <p><b>Service:</b> {{ provider_service }}</p>
+    <p><b>Region:</b> {{ provider_region }}</p>
+    <p><b>Experience:</b> {{ provider_experience }} years</p>
+    <p><b>Contact:</b> {{ provider_phone }}</p>
+    <p><b>About:</b> {{ provider_bio }}</p>
+
+    {{ rating_html|safe }}
+
+    <a class="btn" href="/book/{{ provider_id }}">Request This Service</a>
+
+    <h3 style="margin-top:30px;">Reviews</h3>
+    {{ reviews_html|safe }}
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

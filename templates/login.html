@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Login</h2>
+    <form method="POST">
+        <label>I am a</label>
+        <select name="role" required>
+            <option value="user">User</option>
+            <option value="provider">Service Provider</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+    <p class="small-text">New user? <a href="/signup">Sign up here</a> or
+        <a href="/provider/signup">register as a provider</a>.</p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

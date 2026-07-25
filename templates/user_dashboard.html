@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Hi {{ user_name }}, welcome back!</h2>
+    <div class="home-links">
+        <a href="/search">Find a Service</a>
+        <a href="/my_bookings">My Bookings</a>
+        <a href="/chatbot">Ask the Chatbot</a>
+        <a href="/cost_estimator">Estimate Cost</a>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

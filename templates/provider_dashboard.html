@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Hi {{ provider_name }}, welcome back!</h2>
+    <div class="home-links">
+        <a href="/provider/profile">My Profile</a>
+        <a href="/provider/requests">Manage Requests</a>
+        <a href="/provider/history">Completion History</a>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

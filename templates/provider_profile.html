@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>My Profile</h2>
+    <p class="small-text">This is what users will see when they view your profile.</p>
+
+    <form method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" value="{{ provider_name }}" required>
+
+        <label>Phone Number (shown to users)</label>
+        <input type="text" name="phone" value="{{ provider_phone }}" required>
+
+        <label>Region / City you serve</label>
+        <select name="region" required>
+            {{ region_options|safe }}
+        </select>
+
+        <label>Service Category</label>
+        <select name="service_category" required>
+            {{ services_options|safe }}
+        </select>
+
+        <label>Years of Experience</label>
+        <input type="number" name="experience" min="0" value="{{ provider_experience }}" required>
+
+        <label>Bio / About</label>
+        <textarea name="bio">{{ provider_bio }}</textarea>
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <p class="small-text" style="margin-top:15px;">Account status: {{ provider_status }}</p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

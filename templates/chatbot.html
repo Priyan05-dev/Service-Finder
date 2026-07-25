@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand"><a href="/" style="color:black; text-decoration:none;">ServiceFinder</a></div>
+    <div>{{ navbar|safe }}</div>
+</div>
+
+<div class="container">
+    {{ flash_html|safe }}
+
+    <h2>Service Recommendation Chatbot</h2>
+    <p class="small-text">Describe your problem in your own words, and we'll recommend the right service and provider for you.</p>
+
+    <form method="POST">
+        <label>What's the problem?</label>
+        <textarea name="problem" placeholder="e.g. my kitchen tap is leaking a lot">{{ user_text }}</textarea>
+        <button type="submit">Ask Chatbot</button>
+    </form>
+
+    {{ result_html|safe }}
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
