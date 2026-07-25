@@ -29,3 +29,15 @@ from nltk.tokenize import word_tokenize
 
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
+
+
+def clean_text(text):
+    text = text.lower()
+    tokens = word_tokenize(text)
+
+    cleaned = []
+    for word in tokens:
+        if word.isalpha() and word not in stop_words:
+            cleaned.append(lemmatizer.lemmatize(word))
+
+    return " ".join(cleaned)
